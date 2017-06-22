@@ -10,11 +10,11 @@ Gem::Specification.new do |spec|
   spec.email       = 'gunthercx@gmail.com'
   spec.homepage    = 'https://gunthercox.com'
 
-  spec.version     = '0.0.3'
+  spec.version     = '0.0.4'
   spec.date        = '2017-06-21'
 
   spec.files       = `git ls-files -z`.split("\x0").select do |f|
-    f.match(%r{^(js|css|fonts|_(includes|layouts|sass)/|(LICENSE|README)((\.(txt|md)|$)))}i)
+    f.match(%r{^(assets|_(includes|layouts|sass|js)/|(LICENSE|README)((\.(txt|md)|$)))}i)
   end
 
   spec.bindir      = 'exe'

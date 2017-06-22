@@ -2,5 +2,9 @@
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-  "bootstrap"
+    "bootstrap",
+    "bravissimo/base",
+    "bravissimo/colors",
+    "bravissimo/cards",
+    "bravissimo/bootstrap"
 ;

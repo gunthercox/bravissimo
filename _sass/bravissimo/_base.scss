@@ -1,0 +1,22 @@
+picture, picture * {
+    width: 100%;
+    height: auto;
+}
+
+body {
+    color: #777777;
+    font-family: "Lato","Helvetica Neue","Arial","Helvetica",sans-serif;
+    font-size: 16px;
+    line-height: 19.5px;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+
+h1, .h1 {
+    font-size: 56px;
+}
