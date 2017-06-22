@@ -10,18 +10,18 @@ Gem::Specification.new do |spec|
   spec.email       = 'gunthercx@gmail.com'
   spec.homepage    = 'https://gunthercox.com'
 
-  spec.version     = '0.0.0'
+  spec.version     = '0.0.1'
   spec.date        = '2017-06-21'
 
   spec.files       = `git ls-files -z`.split("\x0").select do |f|
-    f.match(%r{^(assets|_(includes|layouts|sass)/|(LICENSE|README)((\.(txt|md|markdown)|$)))}i)
+    f.match(%r{^(css|fonts|_(includes|layouts|sass)/|(LICENSE|README)((\.(txt|md)|$)))}i)
   end
 
-  spec.bindir      = "exe"
+  spec.bindir      = 'exe'
   spec.executables = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
 
   spec.metadata['plugin_type'] = 'theme'
 
-  spec.add_runtime_dependency "jekyll", "~> 3.3"
-  spec.add_development_dependency "bundler", "~> 1.12"
+  spec.add_runtime_dependency 'jekyll', '~> 3.3'
+  spec.add_development_dependency 'bundler', '~> 1.12'
 end
