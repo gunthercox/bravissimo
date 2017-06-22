@@ -1,0 +1,27 @@
+# coding: utf-8
+
+Gem::Specification.new do |spec|
+  spec.name        = 'bravissimo'
+  spec.summary     = 'A Jekyll theme'
+  spec.description = 'A Jekyll theme (using Bootstrap)'
+  spec.license     = 'MIT'
+
+  spec.authors     = ['Gunther Cox']
+  spec.email       = 'gunthercx@gmail.com'
+  spec.homepage    = 'https://gunthercox.com'
+
+  spec.version     = '0.0.0'
+  spec.date        = '2017-06-21'
+
+  spec.files       = `git ls-files -z`.split("\x0").select do |f|
+    f.match(%r{^(assets|_(includes|layouts|sass)/|(LICENSE|README)((\.(txt|md|markdown)|$)))}i)
+  end
+
+  spec.bindir      = "exe"
+  spec.executables = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
+
+  spec.metadata['plugin_type'] = 'theme'
+
+  spec.add_runtime_dependency "jekyll", "~> 3.3"
+  spec.add_development_dependency "bundler", "~> 1.12"
+end
