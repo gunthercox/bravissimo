@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+    {% include head.html %}
+    <body>
+        {% include navigation.html %}
+
+        <div class="container-fluid color-forest">
+            <div class="row" style="padding: 20px 0px">
+                <div class="col-xs-6">
+                    {% if page.previous %}
+                    <a class="btn btn-default white-outline color-forest" href="{{ page.previous.url }}">
+                        Previous<span class="hidden-xs">: <i>{{ page.previous.title }}</i></span>
+                    </a>
+                    {% endif %}
+                </div>
+                <div class="col-xs-6 text-right">
+                    {% if page.next %}
+                    <a class="btn btn-default white-outline color-forest" href="{{ page.next.url }}">
+                        Next<span class="hidden-xs">: <i>{{ page.next.title }}</i></span>
+                    </a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+
+        <div class="container color-white post">
+
+            <div class="row">
+                <div class="hidden-xs col-sm-2">
+
+                    {% include blog_date.html %}
+
+                    <!-- Gunther Cox Blog Ad -->
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-3019790405701706"
+                         data-ad-slot="6011909365"
+                         data-ad-format="auto"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+
+                </div>
+                <div class="col-xs-12 col-sm-10">
+
+                    <h1>{{ page.title }}</h1>
+                    <hr/>
+
+                    {{ content }}
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="margin-top">
+            <!-- Space above the site footer -->
+        </div>
+
+        {% include footer.html %}
+    </body>
+</html>

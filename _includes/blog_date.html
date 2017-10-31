@@ -1,0 +1,15 @@
+<div class="panel panel-success" style="margin-top: 30px;">
+    <div class="panel-heading text-center">
+        <span class="h3">{{ page.date | date: '%B' }}</span>
+    </div>
+    <div class="panel-body text-center">
+        <div class="h1">{{ page.date | date: '%d' }}</div>
+        <div>{{ page.date | date: '%Y' }}</div>
+    </div>
+</div>
+
+<div>
+    <a class="btn btn-default btn-block" href="https://twitter.com/share?url={{ page.url | absolute_url | uri_escape }}&via=gunthercox&related=salviusrobot&text={{ page.title | uri_escape }}">
+    <i class="fa fa-twitter"></i> Tweet
+    </a>
+</div>
