@@ -8,10 +8,10 @@ Gem::Specification.new do |spec|
 
   spec.authors     = ['Gunther Cox']
   spec.email       = 'gunthercx@gmail.com'
-  spec.homepage    = 'https://gunthercox.com'
+  spec.homepage    = 'https://github.com/gunthercox/bravissimo'
 
-  spec.version     = '0.0.4'
-  spec.date        = '2017-06-21'
+  spec.version     = '0.0.5'
+  spec.date        = '2017-11-16'
 
   spec.files       = `git ls-files -z`.split("\x0").select do |f|
     f.match(%r{^(assets|_(includes|layouts|sass|js)/|(LICENSE|README)((\.(txt|md)|$)))}i)
