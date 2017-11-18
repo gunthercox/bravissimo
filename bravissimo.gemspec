@@ -10,11 +10,11 @@ Gem::Specification.new do |spec|
   spec.email       = 'gunthercx@gmail.com'
   spec.homepage    = 'https://github.com/gunthercox/bravissimo'
 
-  spec.version     = '0.0.5'
+  spec.version     = '0.0.6'
   spec.date        = '2017-11-16'
 
   spec.files       = `git ls-files -z`.split("\x0").select do |f|
-    f.match(%r{^(assets|_(includes|layouts|sass|js)/|(LICENSE|README)((\.(txt|md)|$)))}i)
+    f.match(%r{^(assets|fonts|js|_(includes|layouts|sass)/|(LICENSE|README)((\.(txt|md)|$)))}i)
   end
 
   spec.bindir      = 'exe'
@@ -22,6 +22,6 @@ Gem::Specification.new do |spec|
 
   spec.metadata['plugin_type'] = 'theme'
 
-  spec.add_runtime_dependency 'jekyll', '~> 3.3'
+  spec.add_runtime_dependency 'jekyll', '~> 3.5'
   spec.add_development_dependency 'bundler', '~> 1.12'
 end
