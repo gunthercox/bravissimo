@@ -5,7 +5,11 @@
                 <i>Copyright &copy; {{ 'now' | date: "%Y" }} Gunther Cox</i>
             </div>
 	        <div class="col-xs-6 text-right">
-                <i class="fa fa-quote-right"></i>
+                {% for account in site.data.social %}
+                    <a href="{{ account.url }}" aria-label="{{ account.name }}" target='_blank' class="btn btn-lg btn-link text-white">
+                        <i class="{{ account.icon_class }}" aria-hidden="true" style="font-size: 24px;"></i>
+                    </a>
+                {% endfor %}
             </div>
         </div>
     </div>
