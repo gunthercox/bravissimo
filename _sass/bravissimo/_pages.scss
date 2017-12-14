@@ -1,0 +1,25 @@
+
+.margin-top {
+    margin-top: 50px;
+}
+
+.row-banner {
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+}
+
+.post-divider {
+    height: 80px;
+
+    background: #360033;
+    background: -webkit-linear-gradient(to right, #0b8793, #360033);
+    background: linear-gradient(to right, #0b8793, #360033);
+}
+
+.post {
+    font-size: 16px;
+
+    img {
+        width: 100%;
+    }
+}
