@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email       = 'gunthercx@gmail.com'
   spec.homepage    = 'https://github.com/gunthercox/bravissimo'
 
-  spec.version     = '0.0.17'
+  spec.version     = '0.0.18'
   spec.date        = '2017-12-13'
 
   spec.files       = `git ls-files -z`.split("\x0").select do |f|
