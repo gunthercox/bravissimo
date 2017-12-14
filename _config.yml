@@ -1,3 +1,5 @@
+theme: bravissimo
+
 exclude:
   - Gemfile
   - Gemfile.lock

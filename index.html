@@ -2,4 +2,33 @@
 layout: default
 ---
 
-Test page.
+{% for page in site.posts %}
+<div class="row post-divider"></div>
+
+<div class="container color-white">
+
+    <div class="row post">
+        <div class="hidden-xs col-sm-2">
+
+            {% include blog_date.html %}
+
+        </div>
+        <div class="col-xs-12 col-sm-10">
+
+            <a href="{{ page.url }}">
+                <h1>{{ page.title }}</h1>
+            </a>
+            <hr/>
+
+            {{ page.content }}
+
+        </div>
+    </div>
+
+</div>
+{% else %}
+<p class="lead">
+    Looks like you don't any posts yet.
+</p>
+{% endfor %}
+
