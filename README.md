@@ -7,3 +7,9 @@ Theme for Jekyll sites (gem based)
 ```
 gem install bravissimo
 ```
+
+In your Jekyll `_config.yml` file add:
+
+```
+theme: bravissimo
+```
