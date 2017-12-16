@@ -10,8 +10,8 @@ Gem::Specification.new do |spec|
   spec.email       = 'gunthercx@gmail.com'
   spec.homepage    = 'https://github.com/gunthercox/bravissimo'
 
-  spec.version     = '0.0.22'
-  spec.date        = '2017-12-13'
+  spec.version     = '0.0.23'
+  spec.date        = '2017-12-16'
 
   spec.files       = `git ls-files -z`.split("\x0").select do |f|
     f.match(%r{^(assets|fonts|css|js|_(includes|layouts|sass)/|((\.(html|txt|md)|$)))}i)
