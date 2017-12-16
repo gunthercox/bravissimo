@@ -3,17 +3,28 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-    <meta name="google-site-verification" content="Pbpi_BW55shRDvqTklU4kcgoXpBN9DGaBIAMC1YBnic" />
+    {% for meta_tag in site.meta_tags %}
+        {{ meta_tag }}
+    {% endfor %}
 
     <meta content="{{ site.title }}" property="og:site_name"/>
+    <meta content="{{ site.url }}" property="og:referenced"/>
 
-    <meta content="{{ page.description }}" property="og:description"/>
-
+    <meta content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.short_description }}{% endif %}"/>
+    <meta name="twitter:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.short_description }}{% endif %}">
     <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.short_description }}{% endif %}"/>
 
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    {% if page.title %}
+        <meta content="{{ page.title }}" property="og:title"/>
+        <title>{{ page.title }}</title>
+    {% else %}
+        <meta content="{{ site.title }}" property="og:title"/>
+        <title>{{ site.title }}</title>
+    {% endif %}
 
-    <link rel="publisher" href="https://plus.google.com/+gunthercox"/>
+    {% if site.google_plus_username %}
+    <link rel="publisher" href="https://plus.google.com/+{{ site.google_plus_username }}"/>
+    {% endif %}
 
 	<link rel="stylesheet" href="/assets/css/main.css"/>
 	<link rel="stylesheet" href="/assets/css/font-awesome.css"/>
