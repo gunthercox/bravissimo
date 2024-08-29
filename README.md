@@ -1,7 +1,5 @@
 # bravissimo
 
-[![Build Status](https://travis-ci.org/gunthercox/bravissimo.svg?branch=master)](https://travis-ci.org/gunthercox/bravissimo)
-
 Theme for Jekyll sites (gem based)
 
 ```
@@ -12,4 +10,11 @@ In your Jekyll `_config.yml` file add:
 
 ```
 theme: bravissimo
+```
+
+## Development
+
+```
+install: script/bootstrap
+script: script/cibuild
 ```
