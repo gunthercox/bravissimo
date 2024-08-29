@@ -23,6 +23,7 @@ Gem::Specification.new do |spec|
   spec.metadata['plugin_type'] = 'theme'
 
   spec.add_runtime_dependency 'jekyll', '~> 3.5'
-  spec.add_development_dependency 'bundler', '~> 1.12'
+  spec.add_runtime_dependency 'kramdown-parser-gfm', '~> 1.1'
+  spec.add_development_dependency 'bundler', '~> 2.3'
   spec.add_development_dependency 'html-proofer'
 end
