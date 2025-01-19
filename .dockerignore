@@ -1,0 +1,35 @@
+# --
+# Ruby
+# --
+vendor/
+coverage/
+spec/fixture/site/
+spec/fixture/result/
+spec/fixture/out/
+.bundle/
+*.gem
+
+# --
+# Jekyll
+# --
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.asset-cache/
+site/
+
+# --
+# Yarn
+# --
+yarn.lock
+
+#
+# Git
+#
+/.git
+
+#
+# Docker
+#
+docker-compose.yml
+Dockerfile
