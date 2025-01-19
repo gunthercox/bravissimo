@@ -1,5 +1,7 @@
 theme: bravissimo
 
+title: Bravissimo Example Site
+
 exclude:
   - Gemfile
   - Gemfile.lock

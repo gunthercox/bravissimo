@@ -22,8 +22,10 @@
         <title>{{ site.title }}</title>
     {% endif %}
 
-    {% if site.google_plus_username %}
-    <link rel="publisher" href="https://plus.google.com/+{{ site.google_plus_username }}"/>
+    {% if site.github_username %}
+    <link rel="publisher" href="https://github.com/{{ site.github_username }}"/>
+    {% else if site.twitter_username %}
+    <link rel="publisher" href="https://twitter.com/{{ site.twitter_username }}"/>
     {% endif %}
 
 	<link rel="stylesheet" href="/assets/css/main.css"/>

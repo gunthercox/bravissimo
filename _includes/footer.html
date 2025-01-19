@@ -1,10 +1,10 @@
 <footer>
-	<div class="container-fluid color-rust">
-		<div class="row" style="padding: 15px 0px">
-	        <div class="col-xs-6">
-                <i>Copyright &copy; {{ 'now' | date: "%Y" }} Gunther Cox</i>
+    <div class="container-fluid color-rust">
+        <div class="row footer-row">
+            <div class="col-xs-6 copyright-container">
+                <i class="copyright">Copyright &copy; {{ 'now' | date: "%Y" }} Gunther Cox</i>
             </div>
-	        <div class="col-xs-6 text-right">
+            <div class="col-xs-6 text-right">
                 {% for account in site.data.social %}
                     <a href="{{ account.url }}" aria-label="{{ account.name }}" target='_blank' class="btn btn-lg btn-link text-white">
                         <i class="{{ account.icon_class }}" aria-hidden="true" style="font-size: 24px;"></i>

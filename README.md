@@ -29,5 +29,5 @@ Example:
 
 ```bash
 gem build bravissimo.gemspec
-gem push bravissimo-0.1.1.gem
+gem push bravissimo-0.1.3.gem
 ```

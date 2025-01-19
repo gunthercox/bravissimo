@@ -10,8 +10,8 @@ Gem::Specification.new do |spec|
   spec.email       = 'gunthercx@gmail.com'
   spec.homepage    = 'https://github.com/gunthercox/bravissimo'
 
-  spec.version     = '0.1.0'
-  spec.date        = '2017-12-16'
+  spec.version     = '0.1.3'
+  spec.date        = '2025-01-19'
 
   spec.files       = `git ls-files -z`.split("\x0").select do |f|
     f.match(%r{^(assets|fonts|css|js|_(includes|layouts|sass)/|((\.(html|txt|md)|$)))}i)
@@ -22,8 +22,10 @@ Gem::Specification.new do |spec|
 
   spec.metadata['plugin_type'] = 'theme'
 
-  spec.add_runtime_dependency 'jekyll', '~> 3.5'
+  spec.required_ruby_version = '~> 3.3'
+
+  spec.add_runtime_dependency 'jekyll', '~> 4.3'
   spec.add_runtime_dependency 'kramdown-parser-gfm', '~> 1.1'
-  spec.add_development_dependency 'bundler', '~> 2.3'
-  spec.add_development_dependency 'html-proofer'
+  spec.add_development_dependency 'bundler', '~> 2.6'
+  spec.add_development_dependency 'html-proofer', '~> 5.0'
 end
