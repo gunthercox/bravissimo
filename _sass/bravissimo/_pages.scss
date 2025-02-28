@@ -35,10 +35,15 @@ footer {
     padding: 15px 5px;
 }
 
-.copyright-container {
+.footer-container {
     padding-top: 15px;
 }
 
-.copyright {
+.footer-text {
     padding: 0px 15px;
+}
+
+.footer-text.text-white {
+    color: white;
+    text-decoration: none;
 }

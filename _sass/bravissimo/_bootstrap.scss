@@ -25,6 +25,10 @@
     color: #222;
 }
 
+.panel {
+    margin-bottom: 0px;
+}
+
 .panel-heading {
     overflow: hidden;
 }
@@ -50,4 +54,9 @@
 
 .page-header {
     border-bottom: 1px solid #fff;
+}
+
+.btn-link.text-white {
+    color: white;
+    text-decoration: none;;
 }
