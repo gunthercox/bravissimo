@@ -29,6 +29,9 @@
     {% endif %}
 
 	<link rel="stylesheet" href="/assets/css/main.css"/>
+    {% if site.css_file %}
+        <link rel="stylesheet" href="{{ site.css_file }}">
+    {% endif %}
     {% for css_name in page.extra_css %}
         <link rel="stylesheet" href="{{ css_name }}">
     {% endfor %}
