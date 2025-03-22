@@ -12,6 +12,8 @@ WORKDIR /site
 
 RUN gem update --system && gem install jekyll && gem cleanup
 
+RUN git config --global --add safe.directory /site
+
 COPY Gemfile bravissimo.gemspec ./
 
 # Run `bundle update` to update gems

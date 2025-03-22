@@ -8,8 +8,14 @@
     </div>
 </div>
 
-<div>
+<div class="blog-date-card-social">
+    <a class="btn btn-default btn-block" href="https://bsky.app/intent/compose?text={{ page.url | absolute_url | uri_escape }}%0A{{ page.title | uri_escape }}">
+        <i class="fa-brands fa-bluesky"></i> Share
+    </a>
+</div>
+
+<div class="blog-date-card-social">
     <a class="btn btn-default btn-block" href="https://twitter.com/share?url={{ page.url | absolute_url | uri_escape }}&via={{ site.twitter_username }}&text={{ page.title | uri_escape }}">
-    <i class="fa fa-twitter"></i> Tweet
+        <i class="fa-brands fa-twitter"></i> Tweet
     </a>
 </div>
